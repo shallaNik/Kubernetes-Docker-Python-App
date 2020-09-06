@@ -7,16 +7,17 @@ import itertools, random
 deck = list(itertools.product(range(1,14),['Spade','Heart','Diamond','Club']))
 
 # shuffle the cards
-random.shuffle(deck)
 
 # each player draws 13 cards
 print("----------------GAME BEGINS------------------")
 print("******PLAYER 1******")
 print("You got:")
 for i in range(13):
-   print(deck[i][0], "of", deck[i][1])
-   
+    random.shuffle(deck)
+    print(deck[i][0], "of", deck[i][1])
+
 print("******PLAYER 2******")
 print("You got:")
 for i in range(13):
-   print(deck[i][0], "of", deck[i][1])
+    random.shuffle(deck)
+    print(deck[i][0], "of", deck[i][1])
