@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: game-app
+  labels:
+    app: mygame-app
+spec:
+  containers:
+  - name: python-app
+    image: 
