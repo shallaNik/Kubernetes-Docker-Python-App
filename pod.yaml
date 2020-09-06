@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
   - name: python-app
-    image: 
+    image: py_card_game:1.0
