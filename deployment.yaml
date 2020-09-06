@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: game-app-deployment
+  labels:
+    app: mygame-app
+spec:
+  template:
+    metadata: 
+      name: game-app-pod
+      labels:
+        app: mygame-app
+    spec:
+      containers:
+      - name: python-app
+        image: py_card_game:1.0 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mygame-app
