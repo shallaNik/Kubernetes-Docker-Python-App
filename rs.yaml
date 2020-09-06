@@ -12,4 +12,9 @@ spec:
         app: mygame-app
     spec:
       containers:
-        
+      - name: python-app
+        image: py_card_game:1.0 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mygame-app
