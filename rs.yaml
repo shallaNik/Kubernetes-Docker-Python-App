@@ -3,4 +3,13 @@ kind: ReplicaSet
 metadata:
   name: game-app-rc
   labels:
-    app: 
+    app: mygame-app
+spec:
+  template:
+    metadata: 
+      name: game-app-pod
+      labels:
+        app: mygame-app
+    spec:
+      containers:
+        
